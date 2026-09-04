@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Casa & Co.</title>
+  <link rel="stylesheet" href="/checkout.css">
+</head>
+<body>
+  <header><a class="brand" href="/">casa <span>&</span> co.</a><a href="/">Continue shopping <span>↗</span></a></header>
+  <main class="checkout-layout">
+    <section class="details"><p class="eyebrow">Casa & Co. checkout</p><h1>Make it yours.</h1><p class="intro">A few details and your pieces will be on their way.</p><p id="message" class="message" role="alert" hidden></p>
+      <form id="checkoutForm"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="Your name"><label for="email">Email address</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@example.com"><label for="address">Shipping address</label><textarea id="address" name="address" required autocomplete="street-address" placeholder="Street, city, postal code"></textarea><input type="hidden" id="total" name="total"><button class="place-order" type="submit">Place order <span>→</span></button></form>
+  <div id="confirmation" hidden><p class="success-mark">✓</p><h2>Order placed.</h2><p>Thank you. Your order number is <strong id="orderNumber"></strong>. A confirmation will be sent to your email.</p><a class="place-order link-button" href="/">Return to the store <span>↗</span></a></div>
++    </section>
++    <aside class="summary"><p class="eyebrow">Your selection</p><div id="items"></div><div class="total-row"><span>Total</span><strong id="totalDisplay">$0</strong></div><p class="secure">✓ Secure checkout &nbsp; · &nbsp; Free delivery over $100</p></aside>
++  </main>
++  <script src="/checkout.js" defer></script>
++</body>
++</html>

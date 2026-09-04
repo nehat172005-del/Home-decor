@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account | Casa & Co.</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="auth-shell">
+    <section class="auth-visual" aria-label="Casa & Co. home decor">
+      <a class="brand brand-light" href="/">casa <span>&</span> co.</a>
+      <div><p class="eyebrow">A home for beautiful things</p><h1>Come home to what matters.</h1></div>
+    </section>
+    <section class="auth-panel">
+      <a class="brand" href="/">casa <span>&</span> co.</a>
+      <h2 id="formTitle">Welcome back.</h2>
+      <p class="subtitle" id="formSubtitle">Sign in to keep your considered pieces close.</p>
+      <p class="message" id="message" role="alert" hidden></p>
+      <form id="loginForm">
+        <label for="loginEmail">Email address</label>
+        <input id="loginEmail" name="email" type="email" required autocomplete="email">
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" name="password" type="password" required autocomplete="current-password">
+        <button class="submit-button" type="submit">Sign in <span>→</span></button>
+      </form>
+      <form id="registerForm" hidden>
+        <label for="name">Your name</label>
+        <input id="name" name="name" type="text" required autocomplete="name">
+        <label for="registerEmail">Email address</label>
+        <input id="registerEmail" name="email" type="email" required autocomplete="email">
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" name="password" type="password" required minlength="8" autocomplete="new-password">
+        <button class="submit-button" type="submit">Create account <span>→</span></button>
+      </form>
+      <button class="switch-button" id="switchButton" type="button">New here? Create an account</button>
+    </section>
+  </main>
+  <script src="/login.js" defer></script>
+</body>
+</html>
